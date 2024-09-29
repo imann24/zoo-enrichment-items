@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
     <script>
       function searchFuse(value) {
@@ -9,7 +10,7 @@
         ul.innerHTML = '';
         results.forEach(result => {
           const li = document.createElement('li');
-          const para = document.createElement('p');
+          const para = document.createElement('h2');
           para.textContent = result.item.name;
           const img = document.createElement('img');
           img.src = result.item.picture;
@@ -42,6 +43,7 @@
   </head>
   <body>
     <form>
+      <label id="search-label" for="search">Type to Search<br></label>
       <input type="text" id="search" oninput="searchFuse(this.value)">
       <ul id="results"></ul>
     </form>
