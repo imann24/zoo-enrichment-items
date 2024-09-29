@@ -5,7 +5,6 @@
     <script>
       function searchFuse(value) {
         const results = fuse.search(value);
-        console.log(results);
         const ul = document.getElementById('results');
         ul.innerHTML = '';
         results.forEach(result => {
