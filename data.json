@@ -1,0 +1,65 @@
+{
+    "tools": [
+      {
+        "name": "Toy Car-Hole in Middle",
+        "placement": "On-Exhibit",
+        "overNightPlacement": "Yes",
+        "approvedSpecies": [
+          "Holdings",
+          "Alcids",
+          "Gull"
+        ],
+        "picture": "https://i.ibb.co/7k986Fy/Screenshot-2024-09-29-at-5-00-20-PM.png"
+      },
+      {
+        "name": "Wheel-Large",
+        "placement": "On-Exhibit",
+        "overNightPlacement": "Yes",
+        "approvedSpecies": [
+          "TuVu",
+          "Gull",
+          "Pelican"
+        ],
+        "picture": "https://i.ibb.co/K9gWsXZ/Screenshot-2024-09-29-at-5-01-47-PM.png"
+      },
+      {
+        "name": "Wheel-Med",
+        "placement": "On-Exhibit",
+        "overNightPlacement": "Yes",
+        "approvedSpecies": [
+          "TuVu",
+          "Gull",
+          "Pelican"
+        ],
+        "picture": "https://i.ibb.co/YN3Jfms/Screenshot-2024-09-29-at-5-01-57-PM.png"
+      },
+      {
+        "name": "Connecting Plastic Shapes",
+        "placement": "On-Exhibit",
+        "overNightPlacement": "Yes",
+        "approvedSpecies": "TuVu",
+        "picture": "https://i.ibb.co/Ctx7QdT/Screenshot-2024-09-29-at-5-02-09-PM.png"
+      },
+      {
+        "name": "Corkscrew Rubber Toy",
+        "placement": "On-Exhibit",
+        "overNightPlacement": "No",
+        "approvedSpecies": [
+          "Holding",
+          "Alcid",
+          "Pelican"
+        ],
+        "picture": "https://i.ibb.co/YPh84mV/Screenshot-2024-09-29-at-5-02-16-PM.png"
+      },
+      {
+        "name": "Dive Paddles",
+        "placement": "Off-Exhibit",
+        "overNightPlacement": "Yes",
+        "approvedSpecies": [
+          "Holding",
+          "Alcid"
+        ],
+        "picture": "https://i.ibb.co/9snyXfb/Screenshot-2024-09-29-at-5-02-23-PM.png"
+      }
+    ]
+  }

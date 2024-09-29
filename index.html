@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+    <script>
+      function searchFuse(value) {
+        const results = fuse.search(value);
+        console.log(results);
+        const ul = document.getElementById('results');
+        ul.innerHTML = '';
+        results.forEach(result => {
+          const li = document.createElement('li');
+          const para = document.createElement('p');
+          para.textContent = result.item.name;
+          const img = document.createElement('img');
+          img.src = result.item.picture;
+          li.appendChild(para);
+          li.appendChild(img);
+          ul.appendChild(li);
+        });
+      }
+
+      let fuse;
+      fetch('data.json') // Replace 'data.json' with your relative path
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          const options = {
+            keys: ['name', 'placement', 'approvedSpecies'],
+            includeScore: true,
+            threshold: 0.6
+          };
+          fuse = new Fuse(data.tools, options);
+        })
+        .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="search" oninput="searchFuse(this.value)">
+      <ul id="results"></ul>
+    </form>
+  </body>
+</html>
